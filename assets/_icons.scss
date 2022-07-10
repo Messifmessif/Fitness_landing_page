@@ -1,0 +1,32 @@
+
+
+.icon-wrapper{
+ 
+  // position: absolute;
+  bottom: 10px;
+  width: 100%;
+  div.icon-container {
+      width: 40%;
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+      @include md {
+        margin: auto;
+      }
+      @include lg {
+        width: 20%;
+      }
+      .fa-brands {
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: translateY(-15px);
+        }
+      }
+    }
+
+}
+
+
