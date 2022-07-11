@@ -1,0 +1,78 @@
+header.nav-bar {
+  @include flex;
+  padding: 1rem 0;
+  h2.logo {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $text_clr;
+    cursor: pointer;
+    span {
+      color: $theme_clr;
+    }
+    @include xl {
+      font-size: 2.5rem;
+    }
+  }
+  nav.nav-links {
+    // @include flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    transform: translateX(100vw);
+    transition: all 0.3s ease-out;
+    .nav-item {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $text_clr;
+      margin-left: 20px;
+      text-transform: capitalize;
+      transition: all 0.3s ease;
+      @include xl {
+        font-size: 1.5rem;
+      }
+      &::after {
+        content: "";
+        display: block;
+        margin-top: 10px;
+        height: 2px;
+        width: 0;
+        margin: 5px auto;
+        background-color: $theme_clr;
+        transition: all 0.3s ease-in;
+      }
+      &:hover:after {
+        width: 80%;
+      }
+    }
+    @include md {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: fit-content;
+      height: fit-content;
+      transform: translateX(0);
+      background-color: transparent;
+      @include flex;
+ 
+    }
+  }
+  .fa-bars {
+    font-size: 2.1rem;
+    color: #a4a2a2;
+    cursor: pointer;
+    @include md {
+      display: none;
+    }
+  }
+}
+// SHOW NAVIGATION

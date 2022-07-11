@@ -1,15 +1,13 @@
 
 
 .icon-wrapper{
- 
-  // position: absolute;
-  bottom: 10px;
+
+  margin-bottom: 50px;
   width: 100%;
   div.icon-container {
       width: 40%;
-      display: flex;
       padding: 10px;
-      justify-content: space-between;
+      @include flex;
       @include md {
         margin: auto;
       }
@@ -17,12 +15,15 @@
         width: 20%;
       }
       .fa-brands {
-        font-size: 24px;
+        font-size: 1.5rem;
         color: #fff;
         cursor: pointer;
         transition: all 0.3s ease;
         &:hover {
-          transform: translateY(-15px);
+          transform: translateY(-10px);
+        }
+        @include xl{
+          font-size:1.8rem;
         }
       }
     }

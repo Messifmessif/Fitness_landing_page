@@ -7,25 +7,25 @@ main {
     width: 45%;
   }
   .title {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 25px;
     line-height: 45px;
     color: $text_clr;
   }
   p.body-text {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     color: $text_clr;
     margin-bottom: 30px;
     line-height: 35px;
   }
   button.btn {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: rgb(80, 85, 227);
+    background-color: $theme_clr;
     border: none;
     cursor: pointer;
   }
